@@ -994,7 +994,9 @@
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/revolver45,
 				/obj/effect/spawner/bundle/f13/beretta/select,
-				/obj/effect/spawner/bundle/f13/rangemaster
+				/obj/effect/spawner/bundle/f13/rangemaster,
+				/obj/effect/spawner/bundle/f13/guns/commando,
+				/obj/effect/spawner/bundle/f13/wattz
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3
@@ -1008,7 +1010,15 @@
 				/obj/effect/spawner/bundle/f13/automag,
 				/obj/item/gun/ballistic/automatic/smg/american180,
 				/obj/effect/spawner/bundle/f13/aer9,
-				/obj/effect/spawner/bundle/f13/wattz2k
+				/obj/effect/spawner/bundle/f13/wattz2k,
+				/obj/effect/spawner/bundle/f13/cowboy,
+				/obj/effect/spawner/bundle/f13/dkssniper,
+				/obj/effect/spawner/bundle/f13/greasegun,
+				/obj/effect/spawner/bundle/f13/remingtontwo,
+				/obj/effect/spawner/bundle/f13/guns/auto5,
+				/obj/effect/spawner/bundle/f13/guns/tommygun = 5,
+				/obj/effect/spawner/bundle/f13/laserpistol,
+				/obj/item/gun/energy/laser/wattz/recharger,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4
