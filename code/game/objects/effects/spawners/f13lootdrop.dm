@@ -749,61 +749,61 @@
 			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier5 = 1
 			)
 
-/*	----------------------------------------------------
-	-------------OLD OP GUN WEAPON SPAWNERS DO NOT USE--
-	---------------------------------------------------- */
+/*	------------------------------------------------
+	-------------GUN WEAPON SPAWNERS----------------
+	------------------------------------------------ */
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun
 	name = "gun spawners - DO NOT USE THIS"
 	icon_state = "gun_loot"
 
 //Energy Weapon Spawners
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/hobo
-	name = "hobo tier energy gun"
-	loot = list(/obj/effect/spawner/bundle/f13/wattz,
-				/obj/item/gun/ballistic/rifle/hobo/lasmusket,
-				/obj/item/gun/energy/laser/rechargerrifle,
-				)
 
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy
+	icon_state = "egun_loot"
+
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/hobo
+	name = "very low tier energy gun"
+	loot = list(/obj/effect/spawner/bundle/f13/wattz,
+					/obj/item/gun/energy/laser/rechargerrifle,
+					/obj/item/gun/ballistic/rifle/hobo/lasmusket,
+					)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/low
 	name = "low tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/wattz = 25,
 				/obj/effect/spawner/bundle/f13/wattzm = 15,
-				/obj/effect/spawner/bundle/f13/laserpistol = 30,
-				/obj/item/gun/energy/laser/rechargerrifle = 30,
+				/obj/effect/spawner/bundle/f13/laserpistol = 20,
+				/obj/item/gun/energy/laser/rechargerrifle = 40
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/mid
 	name = "mid tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/aer9 = 26,
-				/obj/effect/spawner/bundle/f13/aer12 = 13,
 				/obj/effect/spawner/bundle/f13/wattz2k = 26,
-				/obj/effect/spawner/bundle/f13/wattz2kext = 15,
 				/obj/effect/spawner/bundle/f13/plasmapistol = 15,
-				/obj/effect/spawner/bundle/f13/ionrifle = 5
 				)
 
-/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh //overlaps with midtier
+/obj/effect/spawner/lootdrop/f13/weapon/gun/energy/midhigh //overlaps with midtier / Why does this exist like why
 	name = "mid-high tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/aer12,
 				/obj/effect/spawner/bundle/f13/plasmapistol,
 				/obj/effect/spawner/bundle/f13/wattz2kext,
-				/obj/effect/spawner/bundle/f13/ionrifle,
-				/obj/effect/spawner/bundle/f13/aer14
 				)
+
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/high
 	name = "high tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/plasmarifle = 25,
-				/obj/effect/spawner/bundle/f13/tribeam = 10,
 				/obj/effect/spawner/bundle/f13/rcw = 20,
 				/obj/effect/spawner/bundle/f13/aer14 = 20,
-				/obj/effect/spawner/bundle/f13/plasmaglock = 25
+				/obj/effect/spawner/bundle/f13/plasmaglock = 25,
+				/obj/effect/spawner/bundle/f13/ionrifle = 20
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/energy/superhigh
 	name = "superhigh tier energy gun"
 	loot = list(/obj/effect/spawner/bundle/f13/multiplas,
+				/obj/effect/spawner/bundle/f13/tribeam,
 				/obj/item/gun/energy/laser/plasma/pistol/alien
 				)
 
@@ -831,6 +831,7 @@
 	name = "very low tier non-hobo ballistic gun"
 	loot = list(/obj/effect/spawner/bundle/f13/ninemil,
 				/obj/effect/spawner/bundle/f13/caravan_shotgun,
+				/obj/item/gun/ballistic/rifle/hunting, //No. More. Mosin.
 				/obj/effect/spawner/bundle/f13/remington,
 				/obj/effect/spawner/bundle/f13/widowmaker,
 				/obj/effect/spawner/bundle/f13/varmint
@@ -845,7 +846,6 @@
 				/obj/effect/spawner/bundle/f13/colt357,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/police_pistol,
-				/obj/effect/spawner/bundle/f13/guns/commando,
 				/obj/effect/spawner/bundle/f13/m1carbine
 				)
 
@@ -854,13 +854,14 @@
 	loot = list(/obj/effect/spawner/bundle/f13/n99,
 				/obj/effect/spawner/bundle/f13/cowboy,
 				/obj/effect/spawner/bundle/f13/mk23,
+				/obj/effect/spawner/bundle/f13/needler,
 				/obj/effect/spawner/bundle/f13/hunting,
 				/obj/effect/spawner/lootdrop/f13/weapon/revolver44variants,
-				/obj/effect/spawner/bundle/f13/rangemaster,
+				/obj/effect/spawner/bundle/f13/trenchshotgun,
 				/obj/effect/spawner/bundle/f13/m1carbine,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
 				/obj/effect/spawner/bundle/f13/revolver45,
-				/obj/effect/spawner/bundle/f13/contender
+				/obj/effect/spawner/bundle/f13/beretta/select
 		)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid
@@ -869,7 +870,6 @@
 				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/miniuzi,
 				/obj/effect/spawner/bundle/f13/auto5,
-				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/m1garand,
 				/obj/effect/spawner/bundle/f13/deagle,
 				/obj/effect/spawner/bundle/f13/automag,
@@ -880,56 +880,37 @@
 	name = "high-mid tier ballistic gun"
 	loot = list(/obj/effect/spawner/bundle/f13/mp5,
 				/obj/effect/spawner/bundle/f13/smg10mm,
-				/obj/effect/spawner/bundle/f13/needler,
 				/obj/effect/spawner/bundle/f13/marksman,
 				/obj/effect/spawner/bundle/f13/guns/tommygun,
 				/obj/effect/spawner/bundle/f13/shotgunlever,
-				/obj/effect/spawner/bundle/f13/infiltrator,
-				/obj/effect/spawner/bundle/f13/brushgun,
+				/obj/effect/spawner/bundle/f13/brushgun
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/high
 	name = "high tier ballistic gun"
 	loot = list(/obj/effect/spawner/bundle/f13/assault_rifle = 20,
 				/obj/effect/spawner/bundle/f13/r84 = 10,
+				/obj/effect/spawner/bundle/f13/brushgun = 20,
+				/obj/effect/spawner/bundle/f13/assault_carbine = 5,
+				/obj/effect/spawner/lootdrop/f13/weapon/revolver44variants = 15,
 				/obj/effect/spawner/bundle/f13/dkssniper = 15,
 				/obj/effect/spawner/bundle/f13/pistol14 = 15,
 				/obj/item/gun/ballistic/revolver/grenadelauncher = 5,
-				/obj/item/gun/ballistic/rocketlauncher = 5,
-				/obj/effect/spawner/bundle/f13/riotshotgun = 10,
-				/obj/item/gun/ballistic/shotgun/automatic/combat/citykiller = 10,
-				/obj/effect/spawner/bundle/f13/guns/p90 = 1,
-				/obj/effect/spawner/bundle/f13/fnfal = 1,
-				/obj/item/gun/ballistic/automatic/bozar = 1
+				/obj/effect/spawner/bundle/f13/citykiller = 10,
+				/obj/effect/spawner/bundle/f13/guns/p90 = 5,
+				/obj/item/gun/ballistic/automatic/lsw = 5,
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/superhigh
 	name = "superhigh tier ballistic gun"
-	loot = list(/obj/effect/spawner/bundle/f13/riotshotgun = 5,
+	loot = list(/obj/effect/spawner/bundle/f13/riotshotgun = 10,
+				/obj/item/gun/ballistic/automatic/bozar = 10,
 				/obj/effect/spawner/bundle/f13/amr = 10,
-				/obj/effect/spawner/bundle/f13/brushgun = 15,
-				/obj/effect/spawner/bundle/f13/fnfal = 10,
+				/obj/effect/spawner/bundle/f13/bar = 10,
 				/obj/item/gun/ballistic/rocketlauncher = 10,
-				/obj/item/gun/ballistic/automatic/bozar = 10
+				/obj/item/gun/ballistic/automatic/g11 = 5,
 				)
 
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/unique
-	name = "unique tier ballistic gun"
-	lootcount = 1
-
-	loot = list(
-				/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
-				/obj/item/gun/ballistic/rifle/hunting/paciencia,
-				/obj/item/gun/ballistic/automatic/varmint/ratslayer,
-				/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator,
-				/obj/item/gun/ballistic/revolver/colt357/lucky,
-				/obj/item/gun/ballistic/automatic/m1garand/oldglory,
-				/obj/item/gun/ballistic/automatic/marksman/sniper/gold,
-				/obj/item/gun/ballistic/automatic/pistol/pistol14/lildevil
-				)
-
-
-//Random-pick pools so that regular spawners aren't super diluted with shit like 3 .44 revolver variants
 
 /obj/effect/spawner/lootdrop/f13/weapon/revolver44variants
 	name = "random spawner for .44 revolvers/variants"
@@ -938,105 +919,6 @@
 				/obj/effect/spawner/bundle/f13/revolver44,
 				/obj/effect/spawner/bundle/f13/revolverm29snub
 				)
-
-/obj/effect/spawner/lootdrop/f13/weapon/pistol10mmvariant //more N99s than type-17s, but you still have the type-17
-	name = "random spawner for 10mm pistols"
-	loot = list(/obj/effect/spawner/bundle/f13/n99 = 3,
-				/obj/effect/spawner/bundle/f13/type17 = 1
-				)
-
-/*	------------------------------------------------
-	-------------NEW TIER'D GUN WEAPON SPAWNERS----------------
-	------------------------------------------------ */
-
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier1
-	name = "tier one firearms"
-	loot = list(/obj/effect/spawner/bundle/f13/pepperbox,
-				/obj/effect/spawner/bundle/weapon/piperifle,
-				/obj/effect/spawner/bundle/f13/zipgun,
-				/obj/item/gun/ballistic/revolver/hobo/knifegun,
-				/obj/item/gun/ballistic/revolver/hobo/knucklegun,
-				/obj/effect/spawner/bundle/f13/autopipe,
-				/obj/effect/spawner/bundle/f13/pistol22,
-				/obj/item/gun/ballistic/revolver/winchesterrebored,
-				/obj/item/gun/energy/laser/rechargerrifle
-				)
-
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2
-	name = "tier two firearms"
-	loot = list(/obj/effect/spawner/bundle/f13/ninemil,
-				/obj/effect/spawner/bundle/f13/caravan_shotgun,
-				/obj/effect/spawner/bundle/f13/widowmaker,
-				/obj/effect/spawner/bundle/f13/varmint,
-				/obj/effect/spawner/lootdrop/f13/weapon/pistol10mmvariant,
-				/obj/effect/spawner/bundle/f13/m1911,
-				/obj/effect/spawner/bundle/f13/remington,
-				/obj/effect/spawner/bundle/f13/revolver45,
-				/obj/effect/spawner/bundle/f13/guns/commando,
-				/obj/effect/spawner/bundle/f13/wattz,
-				/obj/effect/spawner/bundle/f13/contender
-				)
-
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3
-	name ="tier three firearms"
-	loot = list(/obj/effect/spawner/bundle/f13/colt357,
-				/obj/effect/spawner/bundle/f13/thatgun,
-				/obj/effect/spawner/bundle/f13/huntingshotgun,
-				/obj/effect/spawner/bundle/f13/police_pistol,
-				/obj/effect/spawner/bundle/f13/m1carbine,
-				/obj/effect/spawner/bundle/f13/rangemaster,
-				/obj/effect/spawner/bundle/f13/cowboy,
-				/obj/effect/spawner/bundle/f13/dkssniper,
-				/obj/effect/spawner/bundle/f13/greasegun,
-				/obj/effect/spawner/bundle/f13/remingtontwo,
-				/obj/effect/spawner/bundle/f13/guns/auto5,
-				/obj/effect/spawner/bundle/f13/guns/tommygun = 5,
-				/obj/effect/spawner/bundle/f13/laserpistol,
-				/obj/item/gun/energy/laser/wattz/recharger
-				)
-
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4
-	name = "tier four firearms"
-	loot = list(/obj/effect/spawner/bundle/f13/mk23,
-				/obj/effect/spawner/lootdrop/f13/weapon/revolver44variants,
-				/obj/effect/spawner/bundle/f13/trenchshotgun,
-				/obj/effect/spawner/bundle/f13/trail,
-				/obj/effect/spawner/bundle/f13/miniuzi,
-				/obj/effect/spawner/bundle/f13/m1garand,
-				/obj/effect/spawner/bundle/f13/deagle,
-				/obj/effect/spawner/bundle/f13/shotgunlever,
-				/obj/item/gun/ballistic/automatic/smg/american180,
-				/obj/effect/spawner/bundle/f13/r82,
-				/obj/effect/spawner/bundle/f13/aer9,
-				/obj/effect/spawner/bundle/f13/plasmapistol
-				)
-
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5
-	name = "tier five firearms"
-	loot = list(/obj/effect/spawner/bundle/f13/smg10mm,
-				/obj/effect/spawner/bundle/f13/wattz2k,
-				/obj/effect/spawner/bundle/f13/marksman,
-				/obj/effect/spawner/bundle/f13/automag,
-				/obj/item/gun/ballistic/revolver/grenadelauncher,
-				/obj/effect/spawner/bundle/f13/hunting,
-				/obj/effect/spawner/bundle/f13/pistol14,
-				/obj/effect/spawner/bundle/f13/ionrifle = 5,
-				/obj/effect/spawner/bundle/f13/neostead,
-				/obj/effect/spawner/bundle/f13/wattz2kext,
-				)
-
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier6
-	name = "tier six firearms"
-	loot = list(/obj/effect/spawner/bundle/f13/amr = 10,
-				/obj/effect/spawner/bundle/f13/brushgun = 15,
-				/obj/item/gun/ballistic/rocketlauncher = 5,
-				/obj/effect/spawner/bundle/f13/assault_rifle = 20,
-				/obj/effect/spawner/bundle/f13/r84 = 10,
-				/obj/effect/spawner/bundle/f13/rcw = 10,
-				/obj/effect/spawner/bundle/f13/plasmarifle = 5,
-				/obj/effect/spawner/bundle/f13/bar = 10
-				)
-
 //Gun Bundles
 /obj/effect/spawner/bundle/f13/zipgun
 	name = "zip gun spawner"
