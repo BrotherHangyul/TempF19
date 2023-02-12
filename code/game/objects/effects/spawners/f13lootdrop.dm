@@ -859,8 +859,7 @@
 				/obj/effect/spawner/bundle/f13/rangemaster,
 				/obj/effect/spawner/bundle/f13/m1carbine,
 				/obj/effect/spawner/bundle/f13/huntingshotgun,
-				/obj/effect/spawner/bundle/f13/revolver45,
-				/obj/effect/spawner/bundle/f13/contender
+				/obj/effect/spawner/bundle/f13/revolver45
 		)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid
@@ -1382,13 +1381,6 @@
 	items = list(
 				/obj/item/gun/ballistic/automatic/pistol/pistol14,
 				/obj/item/ammo_box/magazine/m14mm
-	)
-
-/obj/effect/spawner/bundle/f13/contender
-	name = "Thompson Contender and ammo spawner"
-	items = list(
-			/obj/item/gun/ballistic/revolver/contender,
-			/obj/item/ammo_casing/a45lc
 	)
 
 /obj/effect/spawner/bundle/f13/neostead
